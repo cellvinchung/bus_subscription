@@ -18,13 +18,12 @@
 ## 使用方式
 
 1. 先取得路線之站牌 ID
-   - GET `http://127.0.0.1:9292/stops/:route_no` :route_no 為路線號碼
-   - response
-   -  [以路線 672 為例](https://github.com/cellvinchung/bus_subscription/blob/master/example/stops.json)
+GET `http://127.0.0.1:9292/stops/:route_no` :route_no 為路線號碼
+- response
+ -  [以路線 672 為例](https://github.com/cellvinchung/bus_subscription/blob/master/example/stops.json)
 
 2. 訂閱通知
-   - 參數
-
+參數
    | 名稱 | 說明 |
    | --- | --- |
    | route_no | 路線號碼 |
@@ -32,4 +31,7 @@
    | stop_id | 站牌 ID |
    | emails | 通知信箱，可以陣列格式設多組 |
 
-   - POST `http://127.0.0.1:9292/subscribe`
+POST `http://127.0.0.1:9292/subscribe`
+
+- response 
+  - 訂閱成功  
