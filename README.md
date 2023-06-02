@@ -19,27 +19,27 @@
 
 1. 先取得路線之站牌 ID
 
-GET `http://127.0.0.1:9292/stops/:route_no` :route_no 為路線號碼
-- response
-   -  [以路線 672 為例](https://github.com/cellvinchung/bus_subscription/blob/master/example/stops.json)
-<img width="852" alt="截圖 2023-06-02 22 28 57" src="https://github.com/cellvinchung/bus_subscription/assets/5347394/4176e5f5-eb8f-45f8-8d5c-1e7565928aec">
+   GET `http://127.0.0.1:9292/stops/:route_no` :route_no 為路線號碼
+   - response
+      -  [以路線 672 為例](https://github.com/cellvinchung/bus_subscription/blob/master/example/stops.json)
+   <img width="852" alt="截圖 2023-06-02 22 28 57" src="https://github.com/cellvinchung/bus_subscription/assets/5347394/4176e5f5-eb8f-45f8-8d5c-1e7565928aec">
 
 
 
 2. 訂閱通知
 
-參數：
-   | 名稱 | 說明 |
-   | --- | --- |
-   | route_no | 路線號碼 |
-   | direction | 方向。 0 為去程，1為返程 |
-   | stop_id | 站牌 ID |
-   | emails | 通知信箱，可以陣列格式設多組 |
+   參數：
+      | 名稱 | 說明 |
+      | --- | --- |
+      | route_no | 路線號碼 |
+      | direction | 方向。 0 為去程，1為返程 |
+      | stop_id | 站牌 ID |
+      | emails | 通知信箱，可以陣列格式設多組 |
 
-以上參數 POST 至 `http://127.0.0.1:9292/subscribe`
+   以上參數 POST 至 `http://127.0.0.1:9292/subscribe`
 
-- response 
-  - 訂閱成功  
+   - response 
+      - 訂閱成功  
 
-<img width="856" alt="截圖 2023-06-02 22 21 49" src="https://github.com/cellvinchung/bus_subscription/assets/5347394/ac023582-64f6-4294-b0fa-894fa8d3d48d">
+   <img width="856" alt="截圖 2023-06-02 22 21 49" src="https://github.com/cellvinchung/bus_subscription/assets/5347394/ac023582-64f6-4294-b0fa-894fa8d3d48d">
 
