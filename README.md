@@ -20,7 +20,7 @@
 1. 先取得路線之站牌 ID
 GET `http://127.0.0.1:9292/stops/:route_no` :route_no 為路線號碼
 - response
- -  [以路線 672 為例](https://github.com/cellvinchung/bus_subscription/blob/master/example/stops.json)
+   -  [以路線 672 為例](https://github.com/cellvinchung/bus_subscription/blob/master/example/stops.json)
 
 2. 訂閱通知
 參數
