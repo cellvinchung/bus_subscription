@@ -26,3 +26,5 @@ gem 'redis'
 gem 'dotenv'
 
 gem 'sidekiq'
+
+gem 'sendgrid-ruby'

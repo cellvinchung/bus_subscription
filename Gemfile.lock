@@ -91,6 +91,9 @@ GEM
       parser (>= 3.2.1.0)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
+    ruby_http_client (3.5.5)
+    sendgrid-ruby (6.6.2)
+      ruby_http_client (~> 3.4)
     sidekiq (7.0.6)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
@@ -123,6 +126,7 @@ DEPENDENCIES
   redis
   rerun
   rubocop
+  sendgrid-ruby
   sidekiq
   sinatra
 
